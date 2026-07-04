@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+mkdir -p playground/dir-{001..100}
+touch playground/dir-{001..100}/file-{A..Z}
+
+tar cf playground.tar playground
+
+tar tvf playground.tar

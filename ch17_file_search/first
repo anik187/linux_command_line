@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+find ~ -type d | wc -l # types are f for file, d for directory, l for simlinks, b for block special device
+
+find ~ -type f -name '*.JPG' -size +1M | wc -l # looking for jpg pictures more than 1MB of size. k for kilobytes G for gigabytes c for Bytes
+
+# find ~ -empty # matches empty files or directory
+
+find ~ \( -type f -not -perm 600 \) -or \( -type d -not -perm 700 \) # combining multiple tests with logical operators
+
+

@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+
+echo "hello world!!"
+
+ls -l /etc > foo.txt
+
+ls -l foo.*
