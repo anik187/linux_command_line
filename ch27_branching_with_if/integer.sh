@@ -19,4 +19,22 @@ main (){
   fi
 }
 
+range (){
+  local MIN_VAL=1
+  local MAX_VAL=100
+
+  INT=50
+
+  if [[ "$INT" =~ ^-?[0-9]+$ ]]; then
+    if [[ $INT -ge $MIN_VAL && $INT -le $MAX_VAL ]]; then
+      echo "$INT falls within the range of $MIN_VAL and $MAX_VAL"
+    else
+      echo "$INT is out of range of $MIN_VAL-$MAX_VAL"
+    fi
+  fi
+}
+
 main
+echo
+echo
+range 
