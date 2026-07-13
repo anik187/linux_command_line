@@ -1,0 +1,6 @@
+ubuntu debian
+mint debian
+zorin debian
+kali  debian
+cachyos arch
+endevouros arch

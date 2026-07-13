@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e
+
 first_program (){
 
   local count=1
@@ -62,5 +64,12 @@ done
 echo "program terminated"
 }
 
+read_with_while (){
+  while  read -p "Enter distro name and family > " distro family; do
+    echo "Distro: $distro, family: $family"
+  done < distros.txt
+}
+
 first_program 
 second_program
+read_with_while
